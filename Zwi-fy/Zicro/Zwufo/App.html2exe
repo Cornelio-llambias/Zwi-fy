@@ -1,0 +1,42 @@
+<convert2exe>
+    <uacLevel>asInvoker</uacLevel>
+    <dpiAware>true</dpiAware>
+    <launcher>C:\Users\corbi\AppData\Local\Adersoft\Vbsedit\ExecutableIcons\html64c_bd69969754a69d5e185f5efd4a90a187.exe</launcher>
+    <folder></folder>
+    <dependencies>
+        <dependency>close-button.png</dependency>
+        <dependency>docs.png</dependency>
+        <dependency>exel.png</dependency>
+        <dependency>forms.png</dependency>
+        <dependency>gmail.png</dependency>
+        <dependency>mappe.png</dependency>
+        <dependency>note.png</dependency>
+        <dependency>outlook.png</dependency>
+        <dependency>overlay.css</dependency>
+        <dependency>powerpoint.png</dependency>
+        <dependency>prezi.png</dependency>
+        <dependency>sheets.png</dependency>
+        <dependency>slides.png</dependency>
+        <dependency>Spotify.png</dependency>
+        <dependency>style.css</dependency>
+        <dependency>teams.png</dependency>
+        <dependency>word.png</dependency>
+        <dependency>Zicro logo.png</dependency>
+        <dependency>Zwheat logo 2.png</dependency>
+        <dependency>Zwimoo logo.png</dependency>
+        <dependency>Zwufo.png</dependency>
+    </dependencies>
+    <mode>gui</mode>
+    <userAccount></userAccount>
+    <appName></appName>
+    <password>072046</password>
+    <silent>no</silent>
+    <unicode>no</unicode>
+    <regfreecom>no</regfreecom>
+    <custom_description>My Description</custom_description>
+    <custom_copyright>© My Company Name 2022</custom_copyright>
+    <custom_productName>My Product Name</custom_productName>
+    <custom_version>01000001</custom_version>
+    <custom_icon>C:\Users\corbi\Downloads\Zwufo.ico</custom_icon>
+    <custom_executable_id></custom_executable_id>
+</convert2exe>

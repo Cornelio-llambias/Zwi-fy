@@ -1,0 +1,16 @@
+<msi>
+    <targetFolder>D:\Websites\Zwi-fy\Zicro\Zwufo\Zwufo_msi</targetFolder>
+    <version>1.0.0.5</version>
+    <description>Zwufo</description>
+    <productName>Zwufo</productName>
+    <manufacturer>Zwi-fy</manufacturer>
+    <scope>perMachine</scope>
+    <upgradeCode>{D5D05664-1F1F-4257-8A0E-1108CC9A0AAB}</upgradeCode>
+    <desktopShortcut>yes</desktopShortcut>
+    <startmenuShortcut>yes</startmenuShortcut>
+    <dependencies>
+        <dependency>App.dll</dependency>
+        <dependency>App.exe.manifest</dependency>
+        <dependency>wix3-wix3112rtm.tar.gz</dependency>
+    </dependencies>
+</msi>

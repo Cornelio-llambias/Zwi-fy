@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zwheat CV</title>
+  <link rel="icon" href="Officedesk logo.png" type="image/icon type">
+  <link rel="stylesheet" href="Z-phone.css">
+</head>
+<body>
+  
+  <style>
+    
+    h1{
+        color:white;
+        padding: 40px;
+font-size: 50px;
+    }
+    
+    h2{
+        color:red;
+    }
+    
+    p{
+        color:red;
+    }
+    
+            * {
+      box-sizing: border-box;
+    }
+    
+    .Z-projekt::-webkit-scrollbar{
+      display: none;
+    }
+    
+    * {box-sizing: border-box;}
+    
+    body { 
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url(Zwheat\ banner.png);
+    }
+    
+    .header {
+      overflow: hidden;
+      background-color: black;
+      padding: 20px 10px;
+    }
+    
+    .header a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px; 
+      line-height: 25px;
+      border-radius: 4px;
+    }
+    
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    
+    .header a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .header a.active {
+      background-color: #00a2ff;
+      color: white;
+    }
+    
+    .header-right {
+      float: right;
+    }
+    
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .header-right {
+        float: none;
+      }
+    }
+    
+    button{
+  color: rgba(0, 0, 0, 0.404);
+  border: 0px;
+}
+
+input{
+    width: 60%;
+    border: 0px;
+    }
+    
+    textarea{
+      width: 100%;
+      height: 100px;
+      border: 0px;
+    }
+            </style>
+
+<div class="header">
+  <h1>My Hours</h1>
+<button type="button" onclick="createNewElement();">Add time</button>
+        <button onclick="window.print()" style="border: 0px;">Download / print</button>  
+          </div>
+            <br>
+
+         <div id="newElementId"></div>
+         <script type="text/JavaScript">
+          function createNewElement() {
+              // First create a DIV element.
+            var txtNewInputBox = document.createElement('div');
+          
+              // Then add the content (a new input box) of the element.
+            txtNewInputBox.innerHTML = "<br><input type='number' id='newInputBox' placeholder='number of hours'><input type='date' id='newInputBox' placeholder='Date'>";
+          
+              // Finally put it where it is supposed to appear.
+            document.getElementById("newElementId").appendChild(txtNewInputBox);
+          }
+          </script>
+<br>
+<div class="add-on">
+ 
+
+<div id="iframeHolder"></div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(function(){
+    $('#button').click(function(){ 
+        if(!$('#iframe').length) {
+                $('#iframeHolder').html('<iframe id="iframe" src="Z-business/Z-signatur.html"></iframe>');
+        }
+    });   
+});
+
+$(function(){
+    $('#button2').click(function(){ 
+        if(!$('#iframe').length) {
+                $('#iframeHolder').html('<iframe id="iframe" src="Z-business/File.html"></iframe>');
+        }
+    });   
+});
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+var dropdowns = document.getElementsByClassName("dropdown-content");
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+  var openDropdown = dropdowns[i];
+  if (openDropdown.classList.contains('show')) {
+    openDropdown.classList.remove('show');
+  }
+}
+}
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction2() {
+document.getElementById("myDropdown2").classList.toggle("show2");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn2')) {
+var dropdowns = document.getElementsByClassName("dropdown-content2");
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+  var openDropdown = dropdowns[i];
+  if (openDropdown.classList.contains('show2')) {
+    openDropdown.classList.remove('show2');
+  }
+}
+}
+}
+</script>
+<style>
+
+iframe{
+width: 50%;
+height: 500px;
+border: 0px;
+}
+
+    @media print{
+
+button{
+  display: none;
+}
+    }
+    </style>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zicro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Zicro logo.png" type="image/icon type">
+</head>
+<body>
+
+  
+  <div id="iframeHolder">
+    
+    <button id="button">
+      <img src="folder.png" alt="" height="50px">
+      <p class="text">File <br> display</p>
+    </button>
+
+  <button id="button2">
+    <img src="post-it.png" alt="" height="50px">
+    <p class="text">Note</p>
+  </button>
+
+  <button id="button3">
+    <img src="checklist.png" alt="" height="50px">
+    <p class="text">Todo <br> list</p>
+  </button>
+
+  <button id="button4">
+    <img src="encrypted.png" alt="" height="50px">
+    <p class="text">password <br> generator</p>
+  </button>
+
+  <button id="button5">
+    <img src="qr.png" alt="" height="50px">
+    <p class="text">QR <br> generator</p>
+  </button>
+
+  <button id="button6">
+    <img src="timetable.png" alt="" height="50px">
+    <p class="text">Working <br> hours</p>
+  </button>
+
+  <button id="button7">
+    <img src="Zwimoo logo.png" alt="" height="50px">
+    <p class="text">Zwimoo</p>
+  </button> 
+  
+  <button onclick="windowOpen()">
+    <img src="Zwheat logo 2.png" alt="" height="50px">
+    <p class="text">Zwheat</p>
+  </button> 
+
+  <button id="button8">
+    <img src="Zwufo/Zwufo.png" alt="" height="50px">
+    <p class="text">Zwufo</p>
+  </button> 
+  </div>
+
+  <div class="footer">
+    <a class="close" id="close"></a>
+  </div>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    $(function(){
+        $('#button').click(function(){ 
+            if(!$('#iframe').length) {
+                $('#close').html('<button class="luk" onClick="window.location.reload();">Close</button>');
+                    $('#iframeHolder').html('<iframe id="iframe" src="file.html"></iframe>');
+            }
+        });   
+    });
+    $(function(){
+        $('#button2').click(function(){ 
+            if(!$('#iframe').length) {
+                $('#close').html('<button class="luk" onClick="window.location.reload();">Close</button>');
+                    $('#iframeHolder').html('<iframe id="iframe" src="notedesk.html"></iframe>');
+            }
+        });   
+    });
+
+    $(function(){
+        $('#button3').click(function(){ 
+            if(!$('#iframe').length) {
+                $('#close').html('<button class="luk" onClick="window.location.reload();">Close</button>');
+                    $('#iframeHolder').html('<iframe id="iframe" src="todo.html"></iframe>');
+            }
+        });   
+    });
+
+    $(function(){
+        $('#button4').click(function(){ 
+            if(!$('#iframe').length) {
+                $('#close').html('<button class="luk" onClick="window.location.reload();">Close</button>');
+                    $('#iframeHolder').html('<iframe id="iframe" src="Zhield.html"></iframe>');
+            }
+        });   
+    });
+
+    
+    $(function(){
+        $('#button5').click(function(){ 
+            if(!$('#iframe').length) {
+                $('#close').html('<button class="luk" onClick="window.location.reload();">Close</button>');
+                    $('#iframeHolder').html('<iframe id="iframe" src="qr.html"></iframe>');
+            }
+        });   
+    });
+
+    $(function(){
+        $('#button6').click(function(){ 
+            if(!$('#iframe').length) {
+                $('#close').html('<button class="luk" onClick="window.location.reload();">Close</button>');
+                    $('#iframeHolder').html('<iframe id="iframe" src="time.html"></iframe>');
+            }
+        });   
+    });
+
+    $(function(){
+        $('#button7').click(function(){ 
+            if(!$('#iframe').length) {
+                $('#close').html('<button class="luk" onClick="window.location.reload();">Close</button>');
+                    $('#iframeHolder').html('<iframe id="iframe" src="https://zwimoo.com/"></iframe>');
+            }
+        });   
+    });
+
+    $(function(){
+        $('#button8').click(function(){ 
+            if(!$('#iframe').length) {
+                $('#close').html('<button class="luk" onClick="window.location.reload();">Close</button>');
+                    $('#iframeHolder').html('<iframe id="iframe" src="Zwufo/index.html"></iframe>');
+            }
+        });   
+    });
+
+
+    var Window;
+
+  // Function that open the new Window
+  function windowOpen() {
+    Window = window.open(
+      "https://zwheat.com/zwheat%20app/zwheat",
+        "_blank", "width=400, height=450");
+}
+    </script> 
+
+    <style>
+        p{
+            color: red;
+        }
+
+        .text{
+        color: rgba(255, 0, 0, 0);
+        font-size: 10px;
+        }
+
+        .text:hover{
+        color: rgb(255, 0, 0);
+        }
+    </style>
+</body>
+</html>
